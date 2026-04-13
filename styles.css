@@ -1,3 +1,37 @@
 * {
   box-sizing: border-box;
 }
+
+body {
+  background-color: #f7f5fa;
+  font-family: "Inter", sans-serif;
+}
+
+.card {
+  background-color: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+}
+
+.btn-primary,
+.btn-primary:hover,
+.btn-primary:visited,
+.btn-primary:active {
+  background-color: #afa6c2;
+  color: white;
+  border: none;
+}
+
+.card-header {
+  color: #1e3a5f;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.card-img-top {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin: 1rem auto 0;
+}
