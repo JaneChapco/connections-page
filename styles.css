@@ -7,6 +7,10 @@ body {
   font-family: "Inter", sans-serif;
 }
 
+.navbar {
+  background-color: lightgrey;
+}
+
 .card {
   background-color: white;
   border: 1px solid #e5e7eb;
@@ -22,9 +26,10 @@ body {
   border: none;
 }
 
+.navbar-brand,
 .card-header {
   color: #1e3a5f;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   font-weight: 600;
 }
 

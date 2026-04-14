@@ -27,82 +27,28 @@
   </head>
   <body>
     <!-- Add navbar from Bootstrap -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">TechConnect</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                id="navbarDropdown"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Dropdown
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><hr class="dropdown-divider" /></li>
-                <li>
-                  <a class="dropdown-item" href="#">Something else here</a>
-                </li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link disabled"
-                href="#"
-                tabindex="-1"
-                aria-disabled="true"
-                >Disabled</a
-              >
-            </li>
-          </ul>
-          <form class="d-flex">
-            <input
-              class="form-control me-2"
-              type="search"
-              placeholder="Search"
-              aria-label="Search"
-            />
-            <button class="btn btn-outline-success" type="submit">
-              Search
-            </button>
-          </form>
-        </div>
-      </div>
-    </nav>
+    <nav class="navbar px-3">
+  <a class="navbar-brand" href="#">techConnect</a>
+    <a class="nav-link" href="#">Home</a>
+    <a class="nav-link" href="#">Network</a>
+    <a class="nav-link" href="#">Notifications</a>
+  <div class="d-flex align-items-center ms-auto gap-3">
+    
+    <span class="fw-semibold mb-0">Jane</span>
+    <button class="btn btn-secondary btn-sm">Log out</button>
+  </div>
+</nav>
 
     <!-- Set up container layout -->
     <div class="container">
   <div class="row">
-    <div class="col-3">
+    
+    <div class="col-12 col-lg-3 col-md-3">
       
       <!-- Add card for current connections on left -->
       <div class="card mt-4">
   <div class="card-header">
-    TechConnections
+    techConnections
   </div>
   <div class="card-body">
     <h5 class="card-title">345</h5>
@@ -110,7 +56,9 @@
     <a href="#" class="btn btn-primary">View Network</a>
   </div>
 </div>
-    </div><div class="col-9 mt-4">
+    </div>
+    
+    <div class="col-12 col-lg-9 col-md-9 mt-4">
 
   <!-- BOX 1: Invitations -->
   <div class="card mb-4">
@@ -120,8 +68,8 @@
     <div class="card-body">
       <div class="row g-3">
 
-        <div class="col-md-3">
-          <div class="card">
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <div class="card h-100">
             <img src="./assets/images/avatar1.jpg" class="card-img-top" alt="Profile photo">
             <div class="card-body">
               <h5 class="card-title mb-1">Michelle Wilson</h5>
@@ -133,8 +81,8 @@
           </div>
         </div>
 
-        <div class="col-md-3">
-          <div class="card">
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <div class="card h-100">
             <img src="./assets/images/avatar2.jpg" class="card-img-top" alt="Profile photo">
             <div class="card-body">
               <h5 class="card-title mb-1">Jonas Schmidt</h5>
@@ -146,8 +94,8 @@
           </div>
         </div>
 
-        <div class="col-md-3">
-          <div class="card">
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <div class="card h-100">
             <img src="./assets/images/avatar3.jpg" class="card-img-top" alt="Profile photo">
             <div class="card-body">
               <h5 class="card-title mb-1">Matthew Park</h5>
@@ -159,8 +107,8 @@
           </div>
         </div>
 
-        <div class="col-md-3">
-          <div class="card">
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <div class="card h-100">
             <img src="./assets/images/avatar4.jpg" class="card-img-top" alt="Profile photo">
             <div class="card-body">
               <h5 class="card-title mb-1">Amy Crawford</h5>
@@ -184,9 +132,9 @@
     <div class="card-body">
       <div class="row g-3">
 
-        <div class="col-md-3">
-          <div class="card">
-            <img src="./assets/images/avatar1.jpg" class="card-img-top" alt="Profile photo">
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <div class="card h-100">
+            <img src="./assets/images/avatar5.jpg" class="card-img-top" alt="Profile photo">
             <div class="card-body">
               <h5 class="card-title mb-1">Jordan Lee</h5>
               <p class="card-text mb-0">Frontend Developer</p>
@@ -196,9 +144,9 @@
           </div>
         </div>
 
-        <div class="col-md-3">
-          <div class="card">
-            <img src="./assets/images/avatar1.jpg" class="card-img-top" alt="Profile photo">
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <div class="card h-100">
+            <img src="./assets/images/avatar6.jpg" class="card-img-top" alt="Profile photo">
             <div class="card-body">
               <h5 class="card-title mb-1">Mike Parsons</h5>
               <p class="card-text mb-0">Content Designer</p>
@@ -208,9 +156,9 @@
           </div>
         </div>
 
-        <div class="col-md-3">
-          <div class="card">
-            <img src="./assets/images/avatar1.jpg" class="card-img-top" alt="Profile photo">
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <div class="card h-100">
+            <img src="./assets/images/avatar7.jpg" class="card-img-top" alt="Profile photo">
             <div class="card-body">
               <h5 class="card-title mb-1">Lisa O'Neal</h5>
               <p class="card-text mb-0">Full Stack Engineer</p>
@@ -220,11 +168,11 @@
           </div>
         </div>
 
-        <div class="col-md-3">
-          <div class="card">
-            <img src="./assets/images/avatar1.jpg" class="card-img-top" alt="Profile photo">
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <div class="card h-100">
+            <img src="./assets/images/avatar8.jpg" class="card-img-top" alt="Profile photo">
             <div class="card-body">
-              <h5 class="card-title mb-1">Avery Chen</h5>
+              <h5 class="card-title mb-1">Connor Wilson</h5>
               <p class="card-text mb-0">Product Manager</p>
               <p class="card-text mb-2">Amazon</p>
               <a href="#" class="btn btn-primary btn-sm">Connect</a>
