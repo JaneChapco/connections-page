@@ -23,169 +23,245 @@
     <!-- Link CSS stylesheet -->
     <link rel="stylesheet" href="styles.css" />
 
-    <title>TechConnect</title>
+    <title>techConnect</title>
   </head>
   <body>
     <!-- Add navbar from Bootstrap -->
     <nav class="navbar px-3">
-  <a class="navbar-brand" href="#">techConnect</a>
-    <a class="nav-link" href="#">Home</a>
-    <a class="nav-link" href="#">Network</a>
-    <a class="nav-link" href="#">Notifications</a>
-  <div class="d-flex align-items-center ms-auto gap-3">
-    
-    <span class="fw-semibold mb-0">Jane</span>
-    <button class="btn btn-secondary btn-sm">Log out</button>
-  </div>
-</nav>
+      <a class="navbar-brand" href="#">techConnect</a>
+
+      <div class="d-flex gap-1">
+        <a class="nav-link" href="#">Home</a>
+        <a class="nav-link" href="#">Network</a>
+        <a class="nav-link" href="#">Notifications</a>
+      </div>
+
+      <div class="d-flex align-items-center ms-auto gap-3">
+        <div class="d-flex align-items-center gap-2">
+          <img
+            src="./assets/images/IMG_1459 2.jpeg"
+            alt="Profile photo of Jane"
+            class="nav-profile-img"
+          />
+          <span class="fw-semibold mb-0">Hi, Jane</span>
+        </div>
+
+        <button class="btn btn-secondary btn-sm">Log out</button>
+      </div>
+    </nav>
 
     <!-- Set up container layout -->
-    <div class="container">
-  <div class="row">
-    
-    <div class="col-12 col-lg-3 col-md-3">
-      
-      <!-- Add card for current connections on left -->
-      <div class="card mt-4">
-  <div class="card-header">
-    techConnections
-  </div>
-  <div class="card-body">
-    <h5 class="card-title">345</h5>
-    <p class="card-text">connections</p>
-    <a href="#" class="btn btn-primary">View Network</a>
-  </div>
-</div>
-    </div>
-    
-    <div class="col-12 col-lg-9 col-md-9 mt-4">
-
-  <!-- BOX 1: Invitations -->
-  <div class="card mb-4">
-    <div class="card-header">
-      Invitations
-    </div>
-    <div class="card-body">
-      <div class="row g-3">
-
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-          <div class="card h-100">
-            <img src="./assets/images/avatar1.jpg" class="card-img-top" alt="Profile photo">
+    <div class="container pb-4">
+      <div class="row">
+        <div class="col-12 col-lg-3 col-md-3">
+          <!-- Card for current connections on left -->
+          <div class="card mt-4">
+            <div class="card-header">techConnections</div>
             <div class="card-body">
-              <h5 class="card-title mb-1">Michelle Wilson</h5>
-              <p class="card-text mb-0">Software Engineer</p>
-              <p class="card-text mb-2">Google</p>
-              <a href="#" class="btn btn-primary btn-sm">Accept</a>
-              <a href="#" class="btn btn-secondary btn-sm">Ignore</a>
+              <h5 class="card-text display-6">345</h5>
+              <div class="connections-img">
+                <img
+                  src="./assets/images/IMG_1459 2.jpeg"
+                  alt="Profile photo of Jane"
+                  class="connections-profile-img"
+                />
+                <img
+                  src="./assets/images/IMG_1459 2.jpeg"
+                  alt="Profile photo of Jane"
+                  class="connections-profile-img"
+                />
+                <img
+                  src="./assets/images/IMG_1459 2.jpeg"
+                  alt="Profile photo of Jane"
+                  class="connections-profile-img"
+                />
+                <img
+                  src="./assets/images/IMG_1459 2.jpeg"
+                  alt="Profile photo of Jane"
+                  class="connections-profile-img"
+                />
+              </div>
+              <p class="card-text mb-0">connections</p>
+
+              <a href="#" class="btn btn-primary mt-2">View Network</a>
             </div>
           </div>
         </div>
 
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-          <div class="card h-100">
-            <img src="./assets/images/avatar2.jpg" class="card-img-top" alt="Profile photo">
+        <div class="col-12 col-lg-9 col-md-9 mt-4">
+          <!-- BOX 1: Invitations -->
+          <div class="card mb-4">
+            <div class="card-header">Invitations</div>
             <div class="card-body">
-              <h5 class="card-title mb-1">Jonas Schmidt</h5>
-              <p class="card-text mb-0">Web Designer</p>
-              <p class="card-text mb-2">Netflix</p>
-              <a href="#" class="btn btn-primary btn-sm">Accept</a>
-              <a href="#" class="btn btn-secondary btn-sm">Ignore</a>
+              <div class="row g-3">
+                <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+                  <div class="card h-100">
+                    <img
+                      src="./assets/images/avatar1.jpg"
+                      class="card-img-top"
+                      alt="Profile photo of Michelle Wilson"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title mb-1">Michelle Wilson</h5>
+                      <p class="card-text mb-0">Software Engineer</p>
+                      <p class="card-text mb-2">Google</p>
+                      <div class="d-flex gap-2">
+                        <button href="#" class="btn btn-primary btn-sm">Accept</a>
+                        <button href="#" class="btn btn-secondary btn-sm">Ignore</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+                  <div class="card h-100">
+                    <img
+                      src="./assets/images/avatar2.jpg"
+                      class="card-img-top"
+                      alt="Profile photo of Jonas Schmidt"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title mb-1">Jonas Schmidt</h5>
+                      <p class="card-text mb-0">Web Designer</p>
+                      <p class="card-text mb-2">Netflix</p>
+                      <div class="d-flex gap-2">
+                        <button href="#" class="btn btn-primary btn-sm">Accept</a>
+                        <button href="#" class="btn btn-secondary btn-sm">Ignore</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+                  <div class="card h-100">
+                    <img
+                      src="./assets/images/avatar3.jpg"
+                      class="card-img-top"
+                      alt="Profile photo of Matthew Park"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title mb-1">Matthew Park</h5>
+                      <p class="card-text mb-0">UI Specialist</p>
+                      <p class="card-text mb-2">Facebook</p>
+                      <div class="d-flex gap-2">
+                        <button href="#" class="btn btn-primary btn-sm">Accept</a>
+                        <button href="#" class="btn btn-secondary btn-sm">Ignore</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+                  <div class="card h-100">
+                    <img
+                      src="./assets/images/avatar4.jpg"
+                      class="card-img-top"
+                      alt="Profile photo of Amy Crawford"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title mb-1">Amy Crawford</h5>
+                      <p class="card-text mb-0">Product Designer</p>
+                      <p class="card-text mb-2">Apple</p>
+                      <div class="d-flex gap-2">
+                        <button href="#" class="btn btn-primary btn-sm">Accept</a>
+                        <button href="#" class="btn btn-secondary btn-sm">Ignore</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- BOX 2: People You May Know -->
+          <div class="card mb-4">
+            <div class="card-header">People You May Know</div>
+            <div class="card-body">
+              <div class="row g-3">
+                <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+                  <div class="card h-100">
+                    <img
+                      src="./assets/images/avatar5.jpg"
+                      class="card-img-top"
+                      alt="Profile photo of Jordan Lee"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title mb-1">Jordan Lee</h5>
+                      <p class="card-text mb-0">Frontend Developer</p>
+                      <p class="card-text mb-2">Shopify</p>
+                      <button href="#" class="btn btn-primary btn-sm">Connect</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+                  <div class="card h-100">
+                    <img
+                      src="./assets/images/avatar6.jpg"
+                      class="card-img-top"
+                      alt="Profile photo of Mike Parsons"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title mb-1">Mike Parsons</h5>
+                      <p class="card-text mb-0">Content Designer</p>
+                      <p class="card-text mb-2">Apple</p>
+                      <button href="#" class="btn btn-primary btn-sm">Connect</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+                  <div class="card h-100">
+                    <img
+                      src="./assets/images/avatar7.jpg"
+                      class="card-img-top"
+                      alt="Profile photo of Lisa O'Neal"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title mb-1">Lisa O'Neal</h5>
+                      <p class="card-text mb-0">Full Stack Engineer</p>
+                      <p class="card-text mb-2">Netflix</p>
+                      <button href="#" class="btn btn-primary btn-sm">Connect</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+                  <div class="card h-100">
+                    <img
+                      src="./assets/images/avatar8.jpg"
+                      class="card-img-top"
+                      alt="Profile photo of Connor Wilson"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title mb-1">Connor Wilson</h5>
+                      <p class="card-text mb-0">Product Manager</p>
+                      <p class="card-text mb-2">Amazon</p>
+                      <button href="#" class="btn btn-primary btn-sm">Connect</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-          <div class="card h-100">
-            <img src="./assets/images/avatar3.jpg" class="card-img-top" alt="Profile photo">
-            <div class="card-body">
-              <h5 class="card-title mb-1">Matthew Park</h5>
-              <p class="card-text mb-0">UI Specialist</p>
-              <p class="card-text mb-2">Facebook</p>
-              <a href="#" class="btn btn-primary btn-sm">Accept</a>
-              <a href="#" class="btn btn-secondary btn-sm">Ignore</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-          <div class="card h-100">
-            <img src="./assets/images/avatar4.jpg" class="card-img-top" alt="Profile photo">
-            <div class="card-body">
-              <h5 class="card-title mb-1">Amy Crawford</h5>
-              <p class="card-text mb-0">Product Designer</p>
-              <p class="card-text mb-2">Apple</p>
-              <a href="#" class="btn btn-primary btn-sm">Accept</a>
-              <a href="#" class="btn btn-secondary btn-sm">Ignore</a>
-            </div>
-          </div>
-        </div>
-
       </div>
     </div>
-  </div>
 
-  <!-- BOX 2: People You May Know -->
-  <div class="card mb-4">
-    <div class="card-header">
-      People You May Know
-    </div>
-    <div class="card-body">
-      <div class="row g-3">
+    <footer class="bg-light text-center py-3 border-top">
+      <p class="mb-2 small text-muted">
+        © 2026 techConnect. All rights reserved.
+      </p>
+      <ul class="list-inline mb-0 ps-0">
+        <li class="list-inline-item">
+          <a href="#" class="text-decoration-none text-muted small">Privacy</a>
+        </li>
+        <li class="list-inline-item">
+          <a href="#" class="text-decoration-none text-muted small">Terms</a>
+        </li>
+      </ul>
+    </footer>
 
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-          <div class="card h-100">
-            <img src="./assets/images/avatar5.jpg" class="card-img-top" alt="Profile photo">
-            <div class="card-body">
-              <h5 class="card-title mb-1">Jordan Lee</h5>
-              <p class="card-text mb-0">Frontend Developer</p>
-              <p class="card-text mb-2">Shopify</p>
-              <a href="#" class="btn btn-primary btn-sm">Connect</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-          <div class="card h-100">
-            <img src="./assets/images/avatar6.jpg" class="card-img-top" alt="Profile photo">
-            <div class="card-body">
-              <h5 class="card-title mb-1">Mike Parsons</h5>
-              <p class="card-text mb-0">Content Designer</p>
-              <p class="card-text mb-2">Apple</p>
-              <a href="#" class="btn btn-primary btn-sm">Connect</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-          <div class="card h-100">
-            <img src="./assets/images/avatar7.jpg" class="card-img-top" alt="Profile photo">
-            <div class="card-body">
-              <h5 class="card-title mb-1">Lisa O'Neal</h5>
-              <p class="card-text mb-0">Full Stack Engineer</p>
-              <p class="card-text mb-2">Netflix</p>
-              <a href="#" class="btn btn-primary btn-sm">Connect</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-          <div class="card h-100">
-            <img src="./assets/images/avatar8.jpg" class="card-img-top" alt="Profile photo">
-            <div class="card-body">
-              <h5 class="card-title mb-1">Connor Wilson</h5>
-              <p class="card-text mb-0">Product Manager</p>
-              <p class="card-text mb-2">Amazon</p>
-              <a href="#" class="btn btn-primary btn-sm">Connect</a>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </div>
-
-</div>
-            <!-- new cards -->
     <!-- Link Bootstrap JavaScript files -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
