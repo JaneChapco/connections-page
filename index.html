@@ -27,26 +27,44 @@
   </head>
   <body>
     <!-- Add navbar from Bootstrap -->
-    <nav class="navbar px-3">
-      <a class="navbar-brand" href="#">techConnect</a>
+    <nav class="navbar navbar-light navbar-expand-lg px-3">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">techConnect</a>
 
-      <div class="d-flex gap-1">
-        <a class="nav-link" href="#">Home</a>
-        <a class="nav-link" href="#">Network</a>
-        <a class="nav-link" href="#">Notifications</a>
-      </div>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#mainNavbar"
+          aria-controls="mainNavbar"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-      <div class="d-flex align-items-center ms-auto gap-3">
-        <div class="d-flex align-items-center gap-2">
-          <img
-            src="./assets/images/IMG_1459 2.jpeg"
-            alt="Profile photo of Jane"
-            class="nav-profile-img"
-          />
-          <span class="fw-semibold mb-0">Hi, Jane</span>
+        <div class="collapse navbar-collapse" id="mainNavbar">
+          <div class="navbar-nav me-auto">
+            <a class="nav-link" href="#">Home</a>
+            <a class="nav-link" href="#">Network</a>
+            <a class="nav-link" href="#">Notifications</a>
+          </div>
+
+          <div
+            class="d-flex flex-column flex-lg-row align-items-start align-items-lg-center gap-3 mt-3 mt-lg-0"
+          >
+            <div class="d-flex align-items-center gap-2">
+              <img
+                src="./assets/images/IMG_1459 2.jpeg"
+                alt="Profile photo of Jane"
+                class="nav-profile-img"
+              />
+              <span class="fw-semibold">Hi, Jane</span>
+            </div>
+
+            <button class="btn btn-secondary btn-sm">Log out</button>
+          </div>
         </div>
-
-        <button class="btn btn-secondary btn-sm">Log out</button>
       </div>
     </nav>
 
@@ -59,25 +77,25 @@
             <div class="card-header">techConnections</div>
             <div class="card-body">
               <h5 class="card-text display-6">345</h5>
-              <div class="connections-img">
+              <div class="connections-img-box">
                 <img
-                  src="./assets/images/IMG_1459 2.jpeg"
-                  alt="Profile photo of Jane"
+                  src="./assets/images/avatar9.jpg"
+                  alt="Profile photo of contact"
                   class="connections-profile-img"
                 />
                 <img
-                  src="./assets/images/IMG_1459 2.jpeg"
-                  alt="Profile photo of Jane"
+                  src="./assets/images/avatar10.jpg"
+                  alt="Profile photo of contact"
                   class="connections-profile-img"
                 />
                 <img
-                  src="./assets/images/IMG_1459 2.jpeg"
-                  alt="Profile photo of Jane"
+                  src="./assets/images/avatar11.jpg"
+                  alt="Profile photo of contact"
                   class="connections-profile-img"
                 />
                 <img
-                  src="./assets/images/IMG_1459 2.jpeg"
-                  alt="Profile photo of Jane"
+                  src="./assets/images/avatar12.jpg"
+                  alt="Profile photo of contact"
                   class="connections-profile-img"
                 />
               </div>
@@ -106,8 +124,8 @@
                       <p class="card-text mb-0">Software Engineer</p>
                       <p class="card-text mb-2">Google</p>
                       <div class="d-flex gap-2">
-                        <button href="#" class="btn btn-primary btn-sm">Accept</a>
-                        <button href="#" class="btn btn-secondary btn-sm">Ignore</a>
+                        <button class="btn btn-primary btn-sm">Accept</button>
+                        <button class="btn btn-secondary btn-sm">Ignore</button>
                       </div>
                     </div>
                   </div>
@@ -125,8 +143,8 @@
                       <p class="card-text mb-0">Web Designer</p>
                       <p class="card-text mb-2">Netflix</p>
                       <div class="d-flex gap-2">
-                        <button href="#" class="btn btn-primary btn-sm">Accept</a>
-                        <button href="#" class="btn btn-secondary btn-sm">Ignore</a>
+                        <button class="btn btn-primary btn-sm">Accept</button>
+                        <button class="btn btn-secondary btn-sm">Ignore</button>
                       </div>
                     </div>
                   </div>
@@ -144,8 +162,8 @@
                       <p class="card-text mb-0">UI Specialist</p>
                       <p class="card-text mb-2">Facebook</p>
                       <div class="d-flex gap-2">
-                        <button href="#" class="btn btn-primary btn-sm">Accept</a>
-                        <button href="#" class="btn btn-secondary btn-sm">Ignore</a>
+                        <button class="btn btn-primary btn-sm">Accept</button>
+                        <button class="btn btn-secondary btn-sm">Ignore</button>
                       </div>
                     </div>
                   </div>
@@ -163,8 +181,8 @@
                       <p class="card-text mb-0">Product Designer</p>
                       <p class="card-text mb-2">Apple</p>
                       <div class="d-flex gap-2">
-                        <button href="#" class="btn btn-primary btn-sm">Accept</a>
-                        <button href="#" class="btn btn-secondary btn-sm">Ignore</a>
+                        <button class="btn btn-primary btn-sm">Accept</button>
+                        <button class="btn btn-secondary btn-sm">Ignore</button>
                       </div>
                     </div>
                   </div>
@@ -189,7 +207,7 @@
                       <h5 class="card-title mb-1">Jordan Lee</h5>
                       <p class="card-text mb-0">Frontend Developer</p>
                       <p class="card-text mb-2">Shopify</p>
-                      <button href="#" class="btn btn-primary btn-sm">Connect</a>
+                      <button class="btn btn-primary btn-sm">Connect</button>
                     </div>
                   </div>
                 </div>
@@ -205,7 +223,7 @@
                       <h5 class="card-title mb-1">Mike Parsons</h5>
                       <p class="card-text mb-0">Content Designer</p>
                       <p class="card-text mb-2">Apple</p>
-                      <button href="#" class="btn btn-primary btn-sm">Connect</a>
+                      <button class="btn btn-primary btn-sm">Connect</button>
                     </div>
                   </div>
                 </div>
@@ -221,7 +239,7 @@
                       <h5 class="card-title mb-1">Lisa O'Neal</h5>
                       <p class="card-text mb-0">Full Stack Engineer</p>
                       <p class="card-text mb-2">Netflix</p>
-                      <button href="#" class="btn btn-primary btn-sm">Connect</a>
+                      <button class="btn btn-primary btn-sm">Connect</button>
                     </div>
                   </div>
                 </div>
@@ -237,7 +255,7 @@
                       <h5 class="card-title mb-1">Connor Wilson</h5>
                       <p class="card-text mb-0">Product Manager</p>
                       <p class="card-text mb-2">Amazon</p>
-                      <button href="#" class="btn btn-primary btn-sm">Connect</a>
+                      <button class="btn btn-primary btn-sm">Connect</button>
                     </div>
                   </div>
                 </div>
